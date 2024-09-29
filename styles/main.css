@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-600: #7f56d9;
+  --color-brand-700: #6941c6;
+  --color-red-300: #fda29b;
+  --color-red-500: #f04438;
+  --color-red-600: #d92d20;
+  --color-gray-50: #f9fafb;
+  --color-gray-200: #e4e7ec;
+  --color-gray-300: #d0d5dd;
+  --color-gray-500: #667085;
+  --color-gray-600: #475467;
+  --color-gray-700: #344054;
+  --color-gray-800: #182230;
+  --color-gray-900: #101828;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-feature-settings:
+    'case' 1,
+    'rlig' 1,
+    'calt' 0;
+}
+
+html,
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+    'Helvetica', sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.height-screen-helper {
+  min-height: calc(100vh - 80px);
+}
